@@ -69,7 +69,7 @@ def GradeCalc(student):
             points = FindAssignmentPoints(i[1])
             totalPoints += int(points) / 100 * int(i[2])
     grade = totalPoints / 1000 * 100
-    return math.floor(grade)
+    return round(grade)
 
 print("1. Student grade")
 print("2. Assignment statistics")
