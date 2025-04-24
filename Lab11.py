@@ -35,7 +35,6 @@ for (r,d,f) in os.walk("data/submissions"):
 
 def FindAssignmentPoints(assid):
     for i in range(0, len(assignments)):
-        print(assignments[i][1])
         if assignments[i][1] == assid:
             return assignments[i][2]
         else:
