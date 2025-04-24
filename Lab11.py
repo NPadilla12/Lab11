@@ -77,19 +77,19 @@ print("3. Assignment graph")
 print("\n")
 opt = input("Enter your selection: ")
 if opt == "1":
-    name = input("What is the students name: ")
+    name = input("What is the student's name: ")
     if GradeCalc(name) != None:
         print(f"{GradeCalc(name)}%")
 if opt == "2":
-    assignment = input("What is the assignment name: ")
+    assignment = input("What is the assignment's name: ")
     if FindAssignmentScores(assignment) != None:
         scores = FindAssignmentScores(assignment)
         minimum = math.floor(min(scores))
         maximum = math.floor(max(scores))
         average = math.floor(sum(scores) / len(scores))
-        print(f"Min: {minimum}")
-        print(f"Avg: {average}")
-        print(f"Max: {maximum}")
+        print(f"Min: {minimum}%")
+        print(f"Avg: {average}%")
+        print(f"Max: {maximum}%")
 if opt == "3":
     assignment = input("What is the assignment name: ")
     if FindAssignmentScores(assignment) != None:
