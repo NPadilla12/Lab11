@@ -81,7 +81,7 @@ if opt == "1":
     if GradeCalc(name) != None:
         print(f"{GradeCalc(name)}%")
 if opt == "2":
-    assignment = input("What is the assignment's name: ")
+    assignment = input("What is the assignment name: ")
     if FindAssignmentScores(assignment) != None:
         scores = FindAssignmentScores(assignment)
         minimum = math.floor(min(scores))
